@@ -38,7 +38,7 @@ Create file `config.json` based on `config.json.sample`.
 
 Run:
 
-`nodejs watch.js`
+`nodejs log-alert.js`
 
 Run as service:
 

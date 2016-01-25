@@ -8,6 +8,7 @@
     },
     "dependencies": {
         "nodemailer": "",
-        "nodemailer-smtp-transport": ""
+        "nodemailer-smtp-transport": "",
+        "node-linux": ""
     }
 }
