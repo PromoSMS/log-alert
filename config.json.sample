@@ -1,0 +1,41 @@
+{
+    "pid": "/home/luigi/nodejs/log-alert/log-alert.pid",
+    "queueTimeout": 60,
+    "files": [
+        {
+            "subject": "PromoSMS log-alert - debug.log",
+            "path": "debug.log",
+            "pattern": "abc",
+            "regExpFlags": "i",
+            "email": {
+                "john.smith@example.com": "John Smith"
+            }
+        },
+        {
+            "path": "error.log",
+            "email": "john.smith@example.com"
+        },
+        {
+            "path": "/var/log/promosms/application.log",
+            "pattern": "[Tt]est[\\s-]?[Pp]attern",
+            "email": [
+                "john.smith@example.com"
+            ]
+        }
+    ],
+    "mailer": {
+        "from": {
+            "email": "log.alert@example.com",
+            "name": "Log Alert"
+        },
+        "smtp": {
+            "port": 465,
+            "host": "smtp.gmail.com",
+            "secure": true,
+            "auth": {
+                "user": "log.alert@example.com",
+                "pass": "password"
+            }
+        }
+    }
+}

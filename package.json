@@ -1,0 +1,13 @@
+{
+    "name":"promosms-log-alert",
+    "version": "1.0.0",
+    "description": "Application that watches for changes in files and notifies about them via email",
+    "author": "Luigi <lukasz@promosms.com>",
+    "scripts": {
+        "start": "nodejs log-alert.js"
+    },
+    "dependencies": {
+        "nodemailer": "",
+        "nodemailer-smtp-transport": ""
+    }
+}
